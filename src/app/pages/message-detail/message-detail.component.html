@@ -1,0 +1,9 @@
+<div *ngIf="message"> <!--ngIf serve come verifica nel caso in cui l’oggetto message sia ‘undefined’-->
+    <button mat-mini-fab color="warn" (click)="delete(message)"> <!--aggiunge bottone-->
+        <mat-icon>delete</mat-icon> <!--mat-icon ci fa visualizzare le incone che definiamo in questo caso un cestino per cancellare -->
+    </button>
+    
+    <h2>{{ message.title }}</h2>
+    <small>messaggio: </small>
+    <p>{{ message.message }}</p>
+</div>
